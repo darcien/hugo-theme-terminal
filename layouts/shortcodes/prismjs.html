@@ -1,3 +1,5 @@
+<!-- NOTE: Some plugin are not available since the prism.js source has been moved to CDN. -->
+<!-- Check themes/terminal/layouts/partials/footer.html for more detail. -->
 {{ $inner := replaceRE "^\n" "" .Inner | string }}
 {{ if len .Params | eq 0 }}
   <pre><code>{{ $inner }}</code></pre>

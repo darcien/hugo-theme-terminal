@@ -13,11 +13,13 @@
 </footer>
 
 <script src="{{ "assets/main.js" | absURL }}"></script>
-<script src="{{ "assets/prism.js" | absURL }}"></script>
-
 {{ if $.Site.Params.showLanguageSelector }}
   <script src="{{ "assets/languageSelector.js" | absURL }}"></script>
 {{ end }}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js" integrity="sha256-9h14mWYYiQGkeAKg2JtijbqApb56kgw57WN6sI6dwH0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-3S2PESHNt0YNL65z57WuHPHIv12fibpBDXepyCGHftw=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha256-7I/IdbPM17QdjqRNwpVYj4iDGAQw7ZFHy9RSSU1yvLE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha256-5F8rynXScCOEtnwlm5P293TlCvTT1beoEJcmWHCg4BU=" crossorigin="anonymous"></script>
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}
