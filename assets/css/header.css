@@ -44,6 +44,12 @@
     }
   }
 
+  .menu-trigger {
+    color: var(--accent);
+    user-select: none;
+    cursor: pointer;
+  }
+
   .menu {
     --shadow-color: color-mod(var(--background) a(80%));
     --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
@@ -105,17 +111,11 @@
       &:not(:only-child) {
         margin-left: 20px;
       }
-
+      
       &-more {
         @mixin menu;
         top: 35px;
         left: 0;
-
-        &-trigger {
-          color: var(--accent);
-          user-select: none;
-          cursor: pointer;
-        }
 
         li {
           margin: 0;
