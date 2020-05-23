@@ -48,6 +48,10 @@
     {{- end -}}
   </div>
 
+  {{ if ne .Page.Lastmod .Page.Date }}
+    <small style="opacity:0.6">Last modified: {{ .Page.Lastmod.Format "2006-01-02" }}</small>
+  {{ end }}
+
   {{ if eq .Type $.Site.Params.contentTypeName }}
   {{ partial "posts_pagination.html" . }}
   {{ end }}
